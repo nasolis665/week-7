@@ -17,7 +17,7 @@ from random import random
 from loops import loop
 from ranges import ranges
 from enumerators import enum
-from zip import zip
+from zip import zips
 from min_max import min_max
 # decisions()
 # comparison()
@@ -25,5 +25,5 @@ from min_max import min_max
 # random()
 # ranges()
 # enum()
-zip()
+zips()
 # min_max()
