@@ -1,8 +1,12 @@
 def enum():
   # enumerate
   print("enumerate")
+
+  # my_list =['a','b','c']
+  for index, item in enumerate(range(50,551)):
+    print(index, item)
   # enumerate is a very useful function to use with for loops. Let's imagine the following situation:
-  
+
   # index_count = 0
   
   # for letter in 'abcde':
@@ -27,10 +31,11 @@ def enum():
   
   # Where name must be each of the names in the list below, and the index, must be obtained via enumerate().
   
-  # list_names = ["Steven", "Jackie", "Donna", "Kelso", "Eric", "Fez", "Kitty", "Red"]
+  list_names = ["Steven", "Jackie", "Donna", "Kelso", "Eric", "Fez", "Kitty", "Red"]
   
   # You can use the given print() line as an example and change its variable names, but the returned phrases must be the same!
-  
+  for index, name in enumerate(list_names):
+    print(f"{name}is found at index {index}")
   # Tip: use loops!
   
   # list_names = ["Steven", "Jackie", "Donna", "Kelso", "Eric", "Fez", "Kitty", "Red"]
@@ -43,14 +48,19 @@ def enum():
   # Create a list formed by the tuples (index, element), obtained through enumerating the indices of each character of the "Python" string.
   
   # Call the returned list with the variable name indices_list.
-  
+  indicies_list= list(enumerate("python"))
+  print(indicies_list)
   # "Python"
   
   
   # Enumerator Practice #3
   # Print to the screen only the indices of those names in the list below, that start with M:
   
-  # list_names = ["Maverick", "Alice", "Madeline", "Hazel", "Jack", "Meadow", "Thomas", "Emily", "Mills"]
+  list_names = ["Maverick", "Alice", "Madeline", "Hazel", "Jack", "Meadow", "Thomas", "Emily", "Mills"]
+  for i,name in enumerate(list_names):
+    if name[0]=="M":
+      print(name)
+      print(i)
   
   # You can solve it in different ways, but it will help you keeping mind some (if not all) the following elements:
   
